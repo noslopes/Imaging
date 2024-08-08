@@ -9,6 +9,7 @@ img = Image.open('IMG_3362.jpg')
 img1 = Image.open('cat.jpg')
 img2 = Image.open('bridge.jpg')
 
+# gaussian filter
 def Gaussian(img):
     img = np.array(img)
 
@@ -27,6 +28,7 @@ def Gaussian(img):
     plt.title('Filtered Image')
     plt.show()
 
+#sobel edge detector
 def SobelEdgeDetect(img):
     ia_32 = np.array(img, dtype=np.int32)
     print(ia_32.flatten()[:5])
