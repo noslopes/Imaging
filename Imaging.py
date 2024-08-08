@@ -49,6 +49,7 @@ def SobelEdgeDetect(img):
         ax.axis("off")
     plt.show()
 
+#median filter to remove salt and pepper noise from an image
 def SPDenoiser(img):
     img = np.array(img)
 
